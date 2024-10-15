@@ -1,3 +1,3 @@
 # aplicacion_web
 
-fastapi dev main.py
+fastapi dev app/main.py
