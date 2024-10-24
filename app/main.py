@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from tortoise import Tortoise
 from tortoise.contrib.fastapi import register_tortoise
-from models import Personas  # Importa el modelo desde models.py
+from app.models import Personas  
 
 # Configuración de la URL de la base de datos PostgreSQL
 DATABASE_URL = ""
@@ -58,4 +58,4 @@ register_tortoise(
 )
 
 
-# uvicorn main:app --reload
+# uvicorn app.main:app --reload
