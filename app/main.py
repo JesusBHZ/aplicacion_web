@@ -6,7 +6,7 @@ from tortoise.contrib.fastapi import register_tortoise
 from models import Personas  
 
 # Configuración de la URL de la base de datos PostgreSQL
-DATABASE_URL = ""
+DATABASE_URL = "postgres://user:RCdImKfgD8W0bxQmuQKykrqYgsJ42vTk@dpg-csc0qu08fa8c738re300-a.oregon-postgres.render.com/db_agenda_sd8j"
 
 # FastAPI app
 app = FastAPI()
