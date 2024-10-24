@@ -6,4 +6,4 @@ class Personas(Model):
     telefono = fields.CharField(max_length=100, unique=True)
 
     class Meta:
-        db = "default"  # Specify the default connection
+        db = "default" 

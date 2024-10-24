@@ -40,7 +40,7 @@ async def obtener_personas():
 async def init():
     await Tortoise.init(
         db_url=DATABASE_URL,
-        modules={"models": ["models"]},  # Cambia "__main__" a "models"
+        modules={"models": ["models"]},  
     )
     await Tortoise.generate_schemas()
 
@@ -52,7 +52,10 @@ async def shutdown():
 register_tortoise(
     app,
     db_url=DATABASE_URL,
-    modules={"models": ["models"]},  # Cambia "__main__" a "models"
+    modules={"models": ["models"]},  
     generate_schemas=False,
     add_exception_handlers=True,
 )
+
+
+# uvicorn main:app --reload
