@@ -3,7 +3,7 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 from tortoise import Tortoise
 from tortoise.contrib.fastapi import register_tortoise
-from app.models import Personas  
+from models import Personas  
 
 # Configuración de la URL de la base de datos PostgreSQL
 DATABASE_URL = ""
